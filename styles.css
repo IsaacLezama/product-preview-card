@@ -1,0 +1,221 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;;
+}
+
+main {
+    margin: 15px 10px;
+}
+
+div.image {
+    background-image: url('images/image-product-mobile.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: 40dvh;
+}
+
+div.card {
+    /* height: 60dvh; */
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+}
+
+p.categorie {
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+h1.card-title {
+    color: hsl(212, 21%, 14%);
+    margin-bottom: 10px;
+}
+
+p.description {
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+div.prices {
+    display: flex;
+    align-items: center;
+    font-family: 'Fraunces', 'serif';
+    margin-bottom: 20px;
+}
+
+p.new-price {
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+p.old-price {
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    font-weight: unset;
+    text-decoration: line-through;
+}
+
+button.card-button {
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 15px;
+    font-weight: 700;
+}
+
+button.card-button:hover {
+    background-color: hsl(158, 36%, 25%);
+}
+
+@media (min-width: 300px) {
+
+    div.image {
+        height: 35dvh;
+    }
+
+    p.categorie {
+        font-size: 12px;
+    }
+
+    h1.card.title {
+        font-size: 16px;
+    }
+
+    p.description {
+        font-size: 12px;
+    }
+
+    p.new-price {
+        font-size: 20px;
+    }
+
+    p.old-price {
+        font-size: 12px;
+    }
+    
+    button.card-button {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 400px) {
+    div.image {
+        height: 35dvh;
+    }
+
+    p.categorie,
+    h1.card-title,
+    p.description,
+    div.prices,
+    button.card-button {
+        margin: 10px;
+    }
+}
+
+@media (min-width: 600px) {
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 30px;
+        margin: 0;
+    }
+
+    div.image {height: 300px;}
+
+    div.card {height: 300px;}
+
+    p.categorie {font-size: 13px;}
+
+    h1.card-title {font-size: 20px;}
+
+    p.description {font-size: 13px;}
+
+    p.new-price {font-size: 18px;}
+
+    button.card-button {
+        padding: 10px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 30px;
+        margin: 0;
+    }
+
+    div.image {
+        height: 400px;
+        background-image: url('images/image-product-desktop.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        width: 100%;
+    }
+
+    div.card {
+        height: 400px;
+    }
+
+    p.categorie {font-size: 14px;}
+
+    h1.card-title {font-size: 24px;}
+
+    p.description {font-size: 14px;}
+
+    p.new-price {font-size: 20px;}
+
+    button.card-button {
+        width: 90%;
+        padding: 10px;
+    }
+
+    p.categorie,
+    h1.card-title,
+    p.description,
+    div.prices,
+    button.card-button {
+        margin: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    div.image,
+    div.card {
+        width: 40%;
+    }
+
+
+    h1.card-title {font-size: 28px;}
+
+
+    p.new-price {font-size: 22px;}
+
+}
